@@ -95,6 +95,9 @@ const Index = () => {
           <Button as={Link} to="/customers" colorScheme="blue" mt={4}>
             Search Customers
           </Button>
+          <Button as={Link} to="/add-customer" colorScheme="green" mt={4} ml={4}>
+            Add Customer
+          </Button>
           <Button colorScheme="red" onClick={handleLogout} mt={4} ml={4}>
             Logout
           </Button>
