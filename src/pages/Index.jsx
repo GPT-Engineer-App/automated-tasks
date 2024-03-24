@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Box, Heading, Text, Button, Input, FormControl, FormLabel, VStack, useToast } from "@chakra-ui/react";
 import { FaLock, FaUserPlus } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const API_BASE_URL = "https://backengine-66nh.fly.dev";
 
@@ -91,7 +92,10 @@ const Index = () => {
       {isLoggedIn ? (
         <Box>
           <Text fontSize="xl">You are logged in!</Text>
-          <Button colorScheme="red" onClick={handleLogout} mt={4}>
+          <Button as={Link} to="/customers" colorScheme="blue" mt={4}>
+            Search Customers
+          </Button>
+          <Button colorScheme="red" onClick={handleLogout} mt={4} ml={4}>
             Logout
           </Button>
         </Box>
